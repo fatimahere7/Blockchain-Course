@@ -1,1 +1,4 @@
-artifact
+artifact/
+cache/
+.abis/
+.remix/
