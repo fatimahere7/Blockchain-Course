@@ -6,7 +6,7 @@ contract SimpleStorage{
     uint256 public number; //we see the variable value by using public
     
     //function to store a number
-    function setNumber(uint256 _num) public {
+    function setNumber(uint256 _num) public virtual {
         number = _num;
     }
     
