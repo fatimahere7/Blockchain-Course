@@ -6,6 +6,9 @@ contract TwitterContract{
     // uint16 constant MAX_TWEET_LENGTH = 280;
     uint16 public MAX_TWEET_LENGTH = 280;
 
+    event TweetCreated(uint256 id , address author , string content , uint256 timestamp);
+    event TweetLiked(address liker , address tweetAuthor , uint256 tweetId , uint256 newLikedCount);
+    event TweetUnLiked(address unliker , address tweetAuthor , uint256 tweetId , uint256 newLikedCount);
     struct Tweet{
         uint256 id;
         address author;
@@ -41,6 +44,7 @@ contract TwitterContract{
             likes : 0
         });
         tweets[msg.sender].push(newTweet);
+        emit TweetCreated(newTweet.id, newTweet.author, newTweet.content, newTweet.timestamp);
 
     }
 
@@ -48,12 +52,14 @@ contract TwitterContract{
         require(tweets[author][id].id == id, "Tweet Doesnt Exist");
 
         tweets[author][id].likes++;
+        emit TweetLiked(msg.sender, author, id, tweets[author][id].likes);
     }
 
     function unLikeTweet(uint256 id , address author) external {
         require(tweets[author][id].id == id, "Tweet Doesnt Exist");
         require(tweets[author][id].likes > 0, "Tweet has no Likes");
         tweets[author][id].likes--;
+        emit TweetUnLiked(msg.sender, author ,id , tweets[author][id].likes);
     }
 
 
