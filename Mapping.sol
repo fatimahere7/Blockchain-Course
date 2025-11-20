@@ -1,5 +1,6 @@
+
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.19;
+pragma solidity 0.8.29;
 
 contract Mapping{
     uint256 public myfavNum; //we see the variable value by using public
@@ -16,7 +17,7 @@ contract Mapping{
     function store(uint256 _favNum) public {
         myfavNum = _favNum;
     }
-
+    
  
     //view , pure
     function retrieve() public view returns (uint256){
