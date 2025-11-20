@@ -1,0 +1,99 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "createChild",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "deployedContarct",
+				"outputs": [
+					{
+						"internalType": "contract ChildContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getChild",
+				"outputs": [
+					{
+						"internalType": "contract ChildContract[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Factory.sol": "FatoryContract"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ChildContract.sol": {
+			"keccak256": "0xa3244114b5a14c497b2253cdaef960eb25448043d03cfa93b6939e1ffcc1556a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f21c33cc18fb094b337dd3bac9ecaeb6b6e315039515bf687cc4494e8b142f70",
+				"dweb:/ipfs/QmWqAmupA1JdbsTPM9rq6SFiADMesWyZ2xZ1uwC2Bgerqt"
+			]
+		},
+		"contracts/Factory.sol": {
+			"keccak256": "0x000f50cc1be67a8456777446f33129df15bf16b936baf38e04ddbd52668768cc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1ab58502114c5c014691342581fb4f688ccfb2df11c4ffdffa8fa8b9abde45b6",
+				"dweb:/ipfs/QmSjKtzG8MU989FL5B9et183Hq7ZBSpArd1HF6KEgP7FCv"
+			]
+		}
+	},
+	"version": 1
+}

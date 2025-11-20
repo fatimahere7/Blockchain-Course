@@ -1,0 +1,93 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "number",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "setNumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"AddFiveStorage.sol": "AddFiveStorage"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"AddFiveStorage.sol": {
+			"keccak256": "0x551ddbd8eb0c70cf9a9918173de161363f92b03a874d4d09eaeee0cfc3d9864f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://707abc6de8aebc8d789dbc32791c649405210d0cbfa63ff50ed55c4210fa0d95",
+				"dweb:/ipfs/QmbMcNciPTMXypNf3DzLSSRcNKtjhbLHYZC5efKy3PVb8c"
+			]
+		},
+		"SimpleStorage.sol": {
+			"keccak256": "0x0956900ede58aa94282338963e826ebf4fcae64fd23470d7139f1ff801ff68d9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c8a64b67cd3462dfa007aa866ea664bbcaa7b4a5d58efd8594813b79c0ab927e",
+				"dweb:/ipfs/QmNLrrzAGCfG3yPjqu27oFhdBvUKd3jyLCRGT2uaYgo4V4"
+			]
+		}
+	},
+	"version": 1
+}
