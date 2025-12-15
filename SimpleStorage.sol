@@ -10,9 +10,10 @@ contract SimpleStorage{
         number = _num;
     }
     
-    //view , pure
-    //function to reterieve thr number
+    //view, pure
+    //function to retrieve the number
     function retrieve() public view returns (uint256){
         return number;
     }
+
 }
