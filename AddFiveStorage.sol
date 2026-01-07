@@ -7,4 +7,5 @@ contract AddFiveStorage is SimpleStorage {
     function setNumber(uint256 _num) public override {
         number = _num + 5;
     }
+
 }
